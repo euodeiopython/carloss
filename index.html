@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carlão Lanches</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+    }
+
+    .partecima {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        height: 35vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        gap: 15px;
+    }
+
+    .partecima .imagen {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #fff;
+    }
+
+    .partecima .texto {
+        font-size: 28px;
+        text-align: center;
+        font-style: italic;
+        color: #fff;
+    }
+
+    h1.section-title {
+        text-align: center;
+        font-style: italic;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 32px;
+        color: #1e3c72;
+    }
+
+    /* Slideshow */
+    .slideshow {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        overflow-x: auto;
+        padding: 0 20px;
+        margin-bottom: 40px;
+    }
+
+    .slideshow img {
+        height: 200px;
+        border-radius: 20px;
+        flex: 0 0 auto;
+    }
+
+    hr {
+        height: 15px;
+        border: none;
+        background-color: #333;
+        border-radius: 10px;
+        margin: 40px 20px;
+    }
+
+    /* Container lanches */
+    .lanche-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+
+    .lanche {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .lanche img {
+        height: 200px; /* Mantendo o tamanho original do slideshow */
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .lanche h2 {
+        color: #1e3c72;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    .lanche .preco {
+        color: #e63946; /* destaque em vermelho */
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .lanche p {
+        color: #1e3c72;
+        font-style: italic;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+
+<div class="partecima">
+    <img class="imagen" src="https://tse1.mm.bing.net/th/id/OIP.u1AoGUQrPrndGrz3oXpy6gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logo">
+    <h1 class="texto">Carlão Lanches, qualidade há mais de 30 anos</h1>
+</div>
+
+<h1 class="section-title">Cardápio</h1>
+<h1 class="section-title">Nossos Lanches</h1>
+
+<!-- Slideshow -->
+<div class="slideshow">
+    <img src="https://www.biofournil.com/wp-content/uploads/2021/02/BRIOCHE-BIOFOURNIL_web-1024x807.jpg" alt="X-Burguer">
+    <img src="https://blog.letskuk.com.br/wp-content/uploads/2022/10/lanches-gourmet.jpg" alt="X-Salada">
+    <img src="https://pocket.devrocket.com.br/uploads/cardapios/imagens/4-2cf5f5b2d5edc4ce4556c8adcd94946bdbf261dc.png" alt="Big Titi">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.NseFW3cwjF5bKuye3OnymgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="X Galinácio">
+    <img src="https://www.maiorviagem.net/wp-content/uploads/2020/09/Dia-Internacional-do-Bacon-Hamburgueria-Bob-Beef.jpg" alt="X Sapequinha">
+</div>
+
+<hr>
+
+<div class="lanche-container">
+
+    <div class="lanche">
+        <h2>X-Burguer Carlão</h2>
+        <div class="preco">R$ 22,90</div>
+        <img src="https://www.biofournil.com/wp-content/uploads/2021/02/BRIOCHE-BIOFOURNIL_web-1024x807.jpg" alt="X-Burguer">
+        <p>Pão brioche macio e levemente adocicado, grelhado na perfeição, envolvendo um suculento hambúrguer de carne bovina premium. Coberto com queijo derretido, alface fresca crocante, tomate maduro e nosso molho especial exclusivo.</p>
+    </div>
+
+    <div class="lanche">
+        <h2>X-Salada Carlão</h2>
+        <div class="preco">R$ 20,50</div>
+        <img src="https://blog.letskuk.com.br/wp-content/uploads/2022/10/lanches-gourmet.jpg" alt="X-Salada">
+        <p>Um hambúrguer suculento de carne premium, envolto por um pão macio e levemente dourado. Coberto com folhas frescas de alface, fatias de tomate, cebola crocante e queijo derretido, finalizado com nosso molho especial.</p>
+    </div>
+
+    <div class="lanche">
+        <h2>Big Titi</h2>
+        <div class="preco">R$ 28,00</div>
+        <img src="https://pocket.devrocket.com.br/uploads/cardapios/imagens/4-2cf5f5b2d5edc4ce4556c8adcd94946bdbf261dc.png" alt="Big Titi">
+        <p>Um hambúrguer gigante, feito com carne premium suculenta, coberto com queijo cheddar derretido, bacon crocante e um toque especial do nosso molho secreto. Pão macio e levemente tostado que segura todos os ingredientes, criando uma explosão de sabor a cada mordida!</p>
+    </div>
+
+    <div class="lanche">
+        <h2>X Galinácio</h2>
+        <div class="preco">R$ 24,50</div>
+        <img src="https://tse2.mm.bing.net/th/id/OIP.NseFW3cwjF5bKuye3OnymgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="X Galinácio">
+        <p>Um suculento hambúrguer de frango grelhado, acompanhado de queijo derretido, alface crocante, tomate fresco e molho especial da casa. Tudo dentro de um pão macio e levemente tostado, garantindo sabor e leveza em cada mordida!</p>
+    </div>
+
+    <div class="lanche">
+        <h2>X Sapequinha</h2>
+        <div class="preco">R$ 23,00</div>
+        <img src="https://www.maiorviagem.net/wp-content/uploads/2020/09/Dia-Internacional-do-Bacon-Hamburgueria-Bob-Beef.jpg" alt="X Sapequinha">
+        <p>Um hambúrguer divertido e cheio de sabor! Carne suculenta, queijo derretido, alface crocante, tomate fresco e cebola caramelizada, finalizado com nosso molho especial. Tudo isso em um pão macio e levemente tostado, perfeito para quem ama um lanche saboroso e diferenciado!</p>
+    </div>
+</div>
+    <hr>
+  
+<h1 align="center" class="section-title">Nossas Bebidas</h1>
+
+</div>
+
+<div class="lanche-container">
+
+    <div class="lanche">
+        <h2>Coca-Cola</h2>
+        <div class="preco">R$ 7,50</div>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7702bf37224391.57397a56d8323.jpg" alt="Coca-Cola"> 
+        <p>Refrescante e gelada, perfeita para acompanhar qualquer lanche!</p>
+    </div>
+
+    <div class="lanche">
+        <h2>Fanta Uva</h2>
+        <div class="preco">R$ 6,50</div>
+        <img src="https://th.bing.com/th/id/OIP.2dNw8GMyNSAD5zdp-I-pAAHaHa?w=220&h=220&c=7&r=0&o=7&pid=1.7&rm=3" alt="Fanta Uva"> 
+        <p>Sabor frutado e doce, ideal para quem gosta de bebidas leves e coloridas.</p>
+    </div>
+
+    <div class="lanche">
+        <h2>Guaraná</h2>
+        <div class="preco">R$ 6,00</div>
+        <img src="https://assets.propmark.com.br/uploads/2020/01/guarana-antarctica.jpg" alt="Guaraná"> 
+        <p>Bebida tradicional brasileira, refrescante e com sabor único de guaraná.</p>
+    </div>
+</div>
+<hr>
+<h1 class="section-title">Sobremessas</h1>
+
+<div class="lanche-container">
+
+    <div class="lanche">
+        <h2>Bolo de Cenoura com Chocolate</h2>
+        <div class="preco">R$ 12,00</div>
+        <img src="https://recipesblob.oetker.com.br/assets/11ed1b54a18b427ea8e7f7d141f0a34d/1272x764/bolo_cenoura_horizontal.jpg" alt="Bolo de Cenoura"> 
+        <p>Bolo fofinho de cenoura com cobertura de chocolate cremoso, perfeito para quem ama doces tradicionais.</p>
+    </div>
+
+    <div class="lanche">
+        <h2>Mousse de <br>Maracujá</h2>
+        <div class="preco">R$ 10,50</div>
+        <img src="https://th.bing.com/th/id/OIP.2VN0rBwPK1elLhnh0knnwQHaE3?w=298&h=196&c=7&r=0&o=7&pid=1.7&rm=3" alt="Mousse de Maracujá"> 
+        <p>Mousse leve e refrescante, feito com suco natural de maracujá e finalizado com calda cítrica.</p>
+    </div>
+
+    <div class="lanche">
+        <h2><br>Cocada</h2>
+        <div class="preco">R$ 9,50</div>
+        <img src="https://th.bing.com/th/id/OIP.apM4iq2dfYxClbboDUnQmwHaEK?w=329&h=185&c=7&r=0&o=7&pid=1.7&rm=3" alt="Cocada">
+        <p>Doce tradicional de coco, macio e saboroso, ideal para quem aprecia sabores tropicais.</p>
+    </div>
+<hr>
+</div>
+</div>
+
+</body>
+</html>
